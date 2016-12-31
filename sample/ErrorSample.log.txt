@@ -4,3 +4,7 @@ ERROR 2016-12-30 16:28:32,715 - FxRestfulController: USDJPY not found: Graph mus
 ERROR 2016-12-30 16:28:37,535 - FxRestfulController: USDEUR not found: Graph must contain the end vertex! FxRestfulController.java 64 
 ERROR 2016-12-30 16:28:43,454 - FxRestfulController: EURJPY not found: Graph must contain the end vertex! FxRestfulController.java 64 
 ERROR 2016-12-30 16:30:50,871 - FxRestfulController: EURDKK not found: Graph must contain the end vertex! FxRestfulController.java 64 
+ERROR 2016-12-31 10:48:54,606 - DirectJDKLog: Failed to start end point associated with ProtocolHandler [http-nio-8080] DirectJDKLog.java 181 
+ERROR 2016-12-31 18:32:17,187 - FxRestfulController: USDJPY not found: Graph must contain the end vertex! FxRestfulController.java 64 
+ERROR 2016-12-31 18:39:00,828 - FxRestfulController: CADCAD not found: ccy1 and ccy2 should not be the same FxRestfulController.java 64 
+ERROR 2016-12-31 18:39:40,268 - FxRestfulController: JPYJPY not found: ccy1 and ccy2 should not be the same FxRestfulController.java 64 

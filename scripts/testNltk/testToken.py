@@ -21,8 +21,10 @@ fname=args.inputFile
 
 with open(fname) as f:
     content = f.readlines()
-
-logPattern="(.*?)\s(\d.*?-\d.*?-\d.*?.*?)-(.*)"
+#2016-12-30 16:27:54,435
+#logPattern="(.*?)\s(\d.*?-\d.*?-\d.*?.*?)-(.*)"
+logPattern="(.*?)\s*?(\d{4}-\d{2}-\d{2}[\s\t]*?\d{2}:\d{2}:\d{2}[\,\.]*?\d{3})\s*?(.*?$)"
+#logPattern="(.*?)\s(\d{4}-\d{2}-\d{2}.*?\d{2}:\d{2}:\d{2}.*?)-(.*)"
 
 ErrorSet=[]
 
@@ -47,6 +49,7 @@ for i in range(0,len(ErrorSet)):
     print ("S"+str(i)+":"+ErrorSet[i].mystr)
     fo.write("S"+str(i)+":"+ErrorSet[i].mystr+"\n")
 
+fo.write ("with Jaccord Distance:\n")
 for i in range(0,len(ErrorSet)):
     for j in range (0,i+1):
        #compare the distance in matrix 
@@ -58,7 +61,8 @@ for i in range(0,len(ErrorSet)):
        else:
            fo.write(",")
     fo.write("\n")
-    
+
+fo.write ("with Measuring Agreement on Set-valued Items (MASI) Distance:\n")    
 for i in range(0,len(ErrorSet)):
     for j in range (0,i+1):
        #compare the distance in matrix 

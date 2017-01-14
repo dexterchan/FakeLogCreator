@@ -23,6 +23,7 @@ class Sentence:
         if(not self.tokenized):
             myToken= nltk.word_tokenize(self.mystr)
             self.myToken=set(myToken)
+            self.tokenized=True
     
     def calculateJaccardDist(self, otherSentence):
         self.init()
